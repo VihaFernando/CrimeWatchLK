@@ -1,9 +1,13 @@
 import React from 'react';
 import './Homepage.css';
+import Header from './Header'
 
 function HomePage() {
   return (
+    <div>
+      <Header />
     <div className="homepage">
+      
       <div className="homepage__content">
         <h2>Welcome to CyberSafe LK</h2>
         <p>
@@ -32,6 +36,7 @@ function HomePage() {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }

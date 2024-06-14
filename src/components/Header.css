@@ -6,7 +6,7 @@
   background-color: #5D6D7E;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  height: 70px; /* Reduced height */
+  height: 70px; 
 }
 
 .header__logo {
@@ -16,22 +16,33 @@
 }
 
 .header__logo img {
-  height: 90px; /* Adjusted height to fit the new header size */
+  height: 90px; 
   margin-right: 1rem;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  margin-right: 5rem; /* Adjust this value to move the nav links to the left */
+  margin-right: 5rem;
 }
 
 .header__nav a {
   color: #c9d1db;
-  margin-left: 3rem; /* Increased spacing between links */
+  margin-left: 3rem; 
   text-decoration: none;
   font-size: 18px;
 }
+
+.header__nav a:hover {
+  color: #ffffff; 
+  text-decoration: underline; 
+}
+
+.header__nav a:active {
+  color: #a0b0c0; 
+  text-decoration: none; 
+}
+
 
 @media (max-width: 768px) {
   .header {

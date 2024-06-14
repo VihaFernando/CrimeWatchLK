@@ -1,0 +1,129 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0A2342, #2E5266);
+    position: relative;
+    overflow: hidden; 
+}
+
+.login-container {
+    width: 300px; 
+    height: 350px; 
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1;
+}
+
+.login-container h2 {
+    color: #fff;
+    font-family: 'Cursive', sans-serif;
+    margin-bottom: 30px;
+}
+
+.login-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #0A2342;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #084080; 
+    color: #f0f0f0; 
+}
+
+.login-button:active {
+    background-color: #061c30; 
+    color: #e0e0e0; 
+}
+
+
+
+.app-name {
+    position: fixed;
+    top: 50px;
+    right: 40px;
+    color: #6a6cd3;
+    font-family: 'Cursive', sans-serif;
+    font-size: 40px;
+}
+
+.loginlogo img {
+    width: 150px;
+    height: 150px;
+    position: fixed; 
+    top: 2px;
+    right: 280px;
+}
+
+@media (max-width: 1200px) {
+    .app-name {
+        font-size: 30px; 
+        top: 20px; 
+        right: 50%;
+        transform: translateX(50%); 
+    }
+    
+    .loginlogo img {
+        width: 100px; 
+        height: 100px; 
+        top: 50px; 
+        right: 50%;
+        transform: translateX(50%); 
+    }
+
+    .login-container {
+        width: 40%; 
+        padding: 10px 20px; 
+        margin-top: 140px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .app-name {
+        font-size: 30px; 
+        top: 20px; 
+        right: 50%;
+        transform: translateX(50%); 
+    }
+    
+    .loginlogo img {
+        width: 100px; 
+        height: 100px; 
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%); 
+    }
+
+    .login-container {
+        width: 80%; 
+        padding: 10px 20px; 
+        margin-top: 100px; 
+    }
+
+
+
+}
