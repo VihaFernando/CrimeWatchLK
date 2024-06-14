@@ -1,0 +1,111 @@
+.homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+  background-color: #F2F4F4;
+}
+
+.homepage__content {
+  flex: 1;
+  max-width: 600px; /* Limit the width to control line breaks */
+  margin-left: 50px;
+}
+
+.homepage__content h2 {
+  color: #1a73e8;
+  font-size: 3.8rem; /* Adjust font size if necessary */
+  line-height: 1.2; /* Adjust line height for better readability */
+}
+
+.homepage__content p {
+  color: #37474f;
+  max-width: 600px; /* Limit the width to control line breaks */
+  font-size: 1.7rem;
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.homepage__content span {
+  color: red;
+}
+
+.homepage__form-box {
+  flex: 1;
+  max-width: 400px;
+  background-color: #e0e0e0; /* Light grey background */
+  border-radius: 25px; /* Rounded corners */
+  padding: 1.5rem; /* Padding inside the box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  margin-right: 100px; /* Default margin for larger screens */
+}
+
+.homepage__form {
+  width: 100%; /* Ensure the form takes up the full width of the box */
+}
+
+.homepage__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage__form label {
+  margin-bottom: 0.5rem;
+  color: #37474f;
+}
+
+.homepage__form input,
+.homepage__form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  height: 20px;
+}
+
+.homepage__form textarea {
+  height: 100px;
+}
+
+.homepage__form button {
+  padding: 0.5rem 1rem;
+  background-color: #1a73e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 200px;
+  margin: 0 auto; /* Centers the button horizontally */
+  display: block; /* Ensures the margin auto works correctly */
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .homepage__content {
+    margin-left: 0; /* Override margin-left */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 90%;
+  }
+
+  .homepage__content h2 {
+    font-size: 3rem; /* Decreased font size for smaller screens */
+  }
+
+  .homepage__content p {
+    font-size: 1.2rem; /* Decreased font size for smaller screens */
+  }
+
+  .homepage__form-box {
+    margin-right: 0; /* Override margin-right */
+    width: 80%; /* Adjust the width to 80% of the viewport width */
+    max-width: 600px; /* Max width to limit size on very large screens */
+    transform: translateX(0); /* Reset left margin for smaller screens */
+    margin-top: 1rem; /* Keep the top margin */
+  }
+}

@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #5D6D7E;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 70px; /* Reduced height */
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  color: #AED6F1;
+}
+
+.header__logo img {
+  height: 90px; /* Adjusted height to fit the new header size */
+  margin-right: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem; /* Adjust this value to move the nav links to the left */
+}
+
+.header__nav a {
+  color: #c9d1db;
+  margin-left: 3rem; /* Increased spacing between links */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .header__logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .header__nav {
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .header__nav a {
+    margin-left: 1rem;
+    font-size: 16px;
+  }
+}
