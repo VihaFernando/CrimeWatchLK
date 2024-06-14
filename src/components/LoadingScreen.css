@@ -1,0 +1,35 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #AEB6BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+  
+  .loading-content {
+    text-align: center;
+  }
+
+  .loading-content h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color:#03142b;
+
+  }
+
+  .loading-logo {
+    width: 250px;
+    height: 250px;
+    transition: opacity 1s ease-in-out; /* Slower transition for opacity */
+  }
+  
+  .blink {
+    opacity: 0;
+  }
+  

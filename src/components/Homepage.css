@@ -9,21 +9,21 @@
 
 .homepage__content {
   flex: 1;
-  max-width: 600px; /* Limit the width to control line breaks */
+  max-width: 600px; 
   margin-left: 50px;
 }
 
 .homepage__content h2 {
-  color: #1a73e8;
-  font-size: 3.8rem; /* Adjust font size if necessary */
-  line-height: 1.2; /* Adjust line height for better readability */
+  color: #144789;
+  font-size: 3.8rem; 
+  line-height: 1.2; 
 }
 
 .homepage__content p {
   color: #37474f;
-  max-width: 600px; /* Limit the width to control line breaks */
+  max-width: 600px; 
   font-size: 1.7rem;
-  line-height: 1.5; /* Adjust line height for better readability */
+  line-height: 1.5; 
 }
 
 .homepage__content span {
@@ -33,15 +33,19 @@
 .homepage__form-box {
   flex: 1;
   max-width: 400px;
-  background-color: #e0e0e0; /* Light grey background */
-  border-radius: 25px; /* Rounded corners */
-  padding: 1.5rem; /* Padding inside the box */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
-  margin-right: 100px; /* Default margin for larger screens */
+  background-color: #cbc9c9; 
+  border-radius: 25px; 
+  padding: 1.5rem; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-right: 100px; 
+  transition: box-shadow 0.4s ease;
+}
+.homepage__form-box:hover {
+  box-shadow: 0px 8px 12px rgba(1, 1, 0, 0.8);
 }
 
 .homepage__form {
-  width: 100%; /* Ensure the form takes up the full width of the box */
+  width: 100%; 
 }
 
 .homepage__form form {
@@ -51,7 +55,7 @@
 
 .homepage__form label {
   margin-bottom: 0.5rem;
-  color: #37474f;
+  color: #4f626c;
 }
 
 .homepage__form input,
@@ -75,8 +79,8 @@
   border-radius: 25px;
   cursor: pointer;
   width: 200px;
-  margin: 0 auto; /* Centers the button horizontally */
-  display: block; /* Ensures the margin auto works correctly */
+  margin: 0 auto; 
+  display: block; 
 }
 
 .homepage__form button:hover {
@@ -97,25 +101,25 @@
   }
 
   .homepage__content {
-    margin-left: 0; /* Override margin-left */
+    margin-left: 0;
     margin-bottom: 1.5rem;
     text-align: center;
     width: 90%;
   }
 
   .homepage__content h2 {
-    font-size: 3rem; /* Decreased font size for smaller screens */
+    font-size: 3rem; 
   }
 
   .homepage__content p {
-    font-size: 1.2rem; /* Decreased font size for smaller screens */
+    font-size: 1.2rem; 
   }
 
   .homepage__form-box {
-    margin-right: 0; /* Override margin-right */
-    width: 80%; /* Adjust the width to 80% of the viewport width */
-    max-width: 600px; /* Max width to limit size on very large screens */
-    transform: translateX(0); /* Reset left margin for smaller screens */
-    margin-top: 1rem; /* Keep the top margin */
+    margin-right: 0; 
+    width: 80%; 
+    max-width: 600px; 
+    transform: translateX(0); 
+    margin-top: 1rem; 
   }
 }
