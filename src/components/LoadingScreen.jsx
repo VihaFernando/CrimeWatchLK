@@ -7,11 +7,11 @@ function LoadingScreen() {
   useEffect(() => {
     const blinkInterval = setInterval(() => {
       setBlink((prevBlink) => !prevBlink);
-    }, 1000); // Blink every second
+    }, 700); // Blink every second
 
     setTimeout(() => {
       clearInterval(blinkInterval);
-    }, 4000); // Stop blinking after 4 seconds
+    }, 2300); // Stop blinking after 4 seconds
 
     return () => clearInterval(blinkInterval);
   }, []);
