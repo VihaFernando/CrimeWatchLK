@@ -61,6 +61,13 @@ const AdminInterface = () => {
       usePointStyle: true // Use custom marker instead of colored square
     }
   };
+  const chartOptions = {
+    plugins: {
+      legend: legendOptions
+    },
+    responsive: true,
+    maintainAspectRatio: false // Allow the chart to adjust size based on container
+  };
 
   return (
     <div className="admin-interface">
@@ -107,8 +114,8 @@ const AdminInterface = () => {
             </div>
           </div>
           <div className="chart">
-            <Pie data={data} options={{ plugins: { legend: legendOptions } }} />
-          </div>
+    <Pie data={data} options={chartOptions} />
+  </div>
         </div>
       </div>
     </div>

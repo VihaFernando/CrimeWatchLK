@@ -187,48 +187,56 @@
     height: 480px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* CSS for responsiveness */
+@media only screen and (max-width: 1250px) {
   .content {
-      flex-direction: column; /* Stack sidebar and main content vertically */
-      padding: 10px; /* Adjust padding for smaller screens */
-  }
-
-  .sidebar {
-      width: 100%; /* Take full width on smaller screens */
-      margin-bottom: 20px; /* Add space between sidebar and main content */
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
   }
 
   .main-content {
-      margin-left: 0; /* Remove margin on left for main content */
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .sidebar {
+    width: 80%;
+    margin-bottom: 20px;
+    align-self: center; /* Center the sidebar horizontally */
+  }
+
+  .main-content {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center; /* Center items horizontally */
   }
 
   .main {
-      margin-right: 0; /* Adjust margin for main content */
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .locations,
+  .total-cases {
+    padding: 15px;
+    margin-bottom: 10px;
   }
 
   .chart {
-      height: auto; /* Allow chart height to adjust based on content */
-  }
-}
-
-/* Small devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .sidebar {
-      width: 300px; /* Adjust width of sidebar for tablets */
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .content {
-      padding: 20px; /* Restore padding for medium and larger screens */
+    padding: 15px;
+    padding-top: 30px;
+    min-height: 450px;
+    padding-bottom: 10%;
+ 
   }
 
-  .main-content {
-      margin-left: 50px; /* Restore margin between sidebar and main content */
-  }
 }
+
+
+
+
 
 
 
