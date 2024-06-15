@@ -70,9 +70,11 @@ function HomePage() {
       <Header />
       <div className="homepage">
         <div className="homepage__content">
-          <h2>Welcome to CyberSafe LK</h2>
+          <h2>Welcome to CrimeWatch LK</h2>
           <p>
-            At CyberSafe Sri Lanka, we are dedicated to safeguarding your digital presence. If you've encountered a cybercrime or suspect malicious activity online, report it here to take immediate action. Together, we protect your online safety. Use the form on the right to <span>report now</span>.
+          At CrimeWatch Sri Lanka, we are committed to ensuring the safety and security of our communities. 
+          If you have witnessed or been a victim of a crime, report it here to take immediate action.
+           Together, we can create a safer environment for everyone. Use the form on the right to <span>report now.</span>
           </p>
         </div>
         <div className="homepage__form-box">

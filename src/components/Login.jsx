@@ -21,7 +21,7 @@ const Login = () => {
         <button className="login-button" onClick={handleLogin}>Login</button>
       </div>
       <div className="app-name">
-        CyberSafe LK
+        CrimeWatch LK
       </div>
       <div className="loginlogo">
         <img src="weblogo.png" alt="" />

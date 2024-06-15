@@ -68,12 +68,12 @@
     right: 40px;
     color: #6a6cd3;
     font-family: 'Cursive', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .loginlogo img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     position: fixed; 
     top: 2px;
     right: 280px;
@@ -88,8 +88,8 @@
     }
     
     .loginlogo img {
-        width: 100px; 
-        height: 100px; 
+        width: 150px; 
+        height: 150px; 
         top: 50px; 
         right: 50%;
         transform: translateX(50%); 
@@ -104,15 +104,15 @@
 
 @media (max-width: 768px) {
     .app-name {
-        font-size: 30px; 
+        font-size: 25px; 
         top: 20px; 
         right: 50%;
         transform: translateX(50%); 
     }
     
     .loginlogo img {
-        width: 100px; 
-        height: 100px; 
+        width: 150px; 
+        height: 150px; 
         top: 50px;
         right: 50%;
         transform: translateX(50%); 

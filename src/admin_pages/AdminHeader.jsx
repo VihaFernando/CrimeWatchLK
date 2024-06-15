@@ -8,7 +8,7 @@ function AdminHeader() {
     <header className="header">
       <div className="header__logo">
         <img src="weblogo.png" alt="CyberSafe LK Logo" />
-        <h1>CyberSafe LK</h1>
+        <h1>CrimeWatch LK</h1>
       </div>
       <nav className="header__nav">
         <Link to="/admin">Dashboard</Link>

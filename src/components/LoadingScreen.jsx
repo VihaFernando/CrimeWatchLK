@@ -24,7 +24,7 @@ function LoadingScreen() {
           alt="CyberSafe LK Logo"
           className={`loading-logo ${blink ? 'blink' : ''}`}
         />
-        <h1>CyberSafe LK</h1>
+        <h1>CrimeWatch LK</h1>
       </div>
     </div>
   );
