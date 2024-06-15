@@ -1,0 +1,235 @@
+.admin-interface {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: #cfcece;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reported-cases-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ensure FontAwesome icons are available for the chevron-right icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.reported-cases-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reported-cases-list li {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reported-cases-list li:hover {
+    background-color: #ebe8e8;
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-color: #ccc; /* Background color of the rounded icon */
+    border-radius: 50%; /* Make it rounded */
+    transition: background-color 0.3s;
+}
+
+.arrow-icon i {
+    color: #333; /* Adjust color as needed */
+    font-size: 0.6em; /* Adjust size as needed */
+}
+
+.reported-cases-list li:hover .arrow-icon {
+    background-color: #999; /* Darken the background color on hover */
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    background-color: #F2F4F4;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+.main {
+    flex: 1;
+    margin-right: 60px;
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.total-cases {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-cases div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-number {
+    color: #b5642e;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status div {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.status div:last-child {
+    margin-right: 0;
+}
+
+.pending-number{
+    color: #b52e2e;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.assigned-number{
+  color: #2eb54e;
+  font-size: 2em;
+  font-weight: bold;
+
+}
+
+.locations {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.locations-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.location:hover {
+    background-color: #f0f0f0;
+}
+
+.location-number{
+  color: #17377e;
+  font-weight: bold;
+}
+
+.chart {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+    height: 480px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content {
+      flex-direction: column; /* Stack sidebar and main content vertically */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .sidebar {
+      width: 100%; /* Take full width on smaller screens */
+      margin-bottom: 20px; /* Add space between sidebar and main content */
+  }
+
+  .main-content {
+      margin-left: 0; /* Remove margin on left for main content */
+  }
+
+  .main {
+      margin-right: 0; /* Adjust margin for main content */
+  }
+
+  .chart {
+      height: auto; /* Allow chart height to adjust based on content */
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sidebar {
+      width: 300px; /* Adjust width of sidebar for tablets */
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+      padding: 20px; /* Restore padding for medium and larger screens */
+  }
+
+  .main-content {
+      margin-left: 50px; /* Restore margin between sidebar and main content */
+  }
+}
+
+
+
+
