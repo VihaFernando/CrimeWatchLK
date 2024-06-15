@@ -10,16 +10,16 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const AdminInterface = () => {
   const data = {
     labels: [
-      'Financial Fraud',
-      'Unauthorized Access',
-      'Malware Attacks',
-      'Online Harassment and Abuse',
-      'Intellectual Property Theft',
-      'Cyber Espionage',
-      'Cyber Terrorism',
-      'Infringement of Privacy',
-      'Social Engineering',
-      'Other Cybercrimes'
+      'Violent Crimes',
+      'Property Crimes',
+      'Cyber Crimes',
+      'Financial Crimes',
+      'Drug-Related Crimes',
+      'Public Order Crimes',
+      'Traffic Violations',
+      'Human Trafficking and Exploitation',
+      'Weapons Violations',
+      'Other Crimes'
     ],
     datasets: [
       {
@@ -76,16 +76,16 @@ const AdminInterface = () => {
         <div className="sidebar">
           <div className="reported-cases-title">REPORTED CASES</div>
           <ul className="reported-cases-list">
-            <li>Financial Fraud <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Unauthorized Access <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Malware Attacks <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Online Harassment and Abuse <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Intellectual Property Theft <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Cyber Espionage <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Cyber Terrorism <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Infringement of Privacy <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Social Engineering <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
-            <li>Other Cybercrimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Violent Crimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Property Crimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Cyber Crimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Financial Crimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Drug-Related Crimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Public Order Crimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Traffic Violations <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Human Trafficking and Exploitation <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Weapons Violations <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
+            <li>Other Crimes <span className="arrow-icon"><i className="fas fa-chevron-right"></i></span></li>
           </ul>
         </div>
         <div className="main-content">
